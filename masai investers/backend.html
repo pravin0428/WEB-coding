@@ -11,12 +11,12 @@
  </head>
  <body>
      <div id="nav">
-         <div> <a href="fontend.html">FrontEnd</a>  </div>
+         <div> <a href="frantend.html">FrontEnd</a>  </div>
          <div> <a href="backend.html"> BackEnd</a>  </div>
      </div>
 
     <form id="form" >
-        <input id="image" type="text" placeholder="Enter Image URL">
+        <input  id="image" type="text" placeholder="Enter Image URL">
         <input  id="name" type="text" placeholder="Enter Envester name">
         <input  id="role" type="text" placeholder="Enter Invester role" >
         <input  id="logo" type="text" placeholder="Enter ocmpany logo URL" >
@@ -30,7 +30,142 @@
   
    document.querySelector("#form").addEventListener("submit", myfunction)
   
-   
+   var investorsData = [
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg",
+    },
+    {
+      avatar:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg",
+      name: "Vijay Shekhar Sharma",
+      position: "Founder & CEO",
+      logo: "https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png",
+    },
+  ];
+
    var investerArr = JSON.parse(localStorage.getItem("investersData")) || []  ;
   
   

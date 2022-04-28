@@ -1,0 +1,17 @@
+ 
+
+#container{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(400px , 1fr);
+ gap: 30px 15px;
+ margin-top: 30px;
+}
+#container>div{
+    border: 1px solid red;
+    width: auto;
+    
+}
+ /* .btn{
+      margin-left: 20px;
+ } */
